@@ -7,7 +7,7 @@ html    {
     text-shadow: 1px 1px  rgba(24, 209, 255, 0.712);
 }
 :root {
-    --shadow-color: rgba(0, 0, 0, 0.603);
+    --shadow-color: rgba(0, 0, 0, 0.787);
 }
 main {
     min-height: 100vh;
@@ -75,23 +75,32 @@ video {
 .in {
     width: 5rem;
     height: 5rem;
-    background-color: rgb(193, 196, 32);
+    background-color: rgba(153, 119, 62, 0.692);
     border-radius: 50%;
-    box-shadow:  0px 0px 25px 15px var(--shadow-color);
-    border: 2px solid black;
+    box-shadow:  0px 0px 35px 20px var(--shadow-color);
 }
 /* ========================================= */
 .point {
-    height: 2rem;
-    width: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 50%;
-    background-color: rgb(0, 238, 255);
+    background-color: rgb(0, 59, 253);
     position: absolute;
-    left: 0.25rem;
+    left: 0rem;
     top: center;
-    
+    transform-origin: 5rem;
+    animation: rotate 2s linear 2s infinite;
+    box-shadow: 0px 2px rgb(0, 59, 253), 0px 4px   rgb(0, 59, 253), 0px 6px  rgba(0, 59, 253, 0.89),
+    1px 8px  rgba(0, 59, 253, 0.877), 1px 10px rgba(0, 59, 253, 0.89), 1px 12px rgba(0, 59, 253, 0.89), 2px 14px rgba(0, 59, 253, 0.89),
+    2px 16px rgba(0, 59, 253, 0.89), 2px 18px rgba(0, 59, 253, 0.89),3px 20px rgba(0, 59, 253, 0.89),3px 22px rgba(0, 59, 253, 0.89),
+    4px 24px rgba(0, 59, 253, 0.89),4px 26px rgba(0, 59, 253, 0.89), 5px 28px rgba(0, 59, 253, 0.89), 5px 30px rgba(0, 59, 253, 0.89);
 }
 
+/* =============Animation============== */
+@keyframes rotate {
+    from {transform: rotate(0turn);}
+    to {transform: rotate(1turn);}
+}
 /* ============================================== */
 @media (min-width: 200px) and (max-width: 600px) {
     /* Свойства применяются в пределах от меньшего к большему. */
