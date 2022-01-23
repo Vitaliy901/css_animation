@@ -7,7 +7,19 @@ html    {
     text-shadow: 1px 1px  rgba(24, 209, 255, 0.712);
 }
 
-
+main {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: inherit;
+    min-width: 100vw;
+    object-fit: cover;
+}
 
 /* ============================================== */
 @media (min-width: 200px) and (max-width: 600px) {
