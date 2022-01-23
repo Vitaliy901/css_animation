@@ -6,7 +6,9 @@ html    {
     color: white;
     text-shadow: 1px 1px  rgba(24, 209, 255, 0.712);
 }
-
+:root {
+    --shadow-color: rgba(10, 10, 10, 0.835);
+}
 main {
     min-height: 100vh;
     position: relative;
@@ -31,12 +33,14 @@ video {
 .circle {
     flex: 0 0 10rem;
     height: 10rem;
-    background-color: rgb(85, 3, 122);
+    background-color: rgb(48, 0, 70);
     border-radius: 50%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: inset 0px 0px 25px 15px var(--shadow-color);
+    border: 2px solid black;
 }
 
 .one {
@@ -50,7 +54,8 @@ video {
     height: 5rem;
     background-color: rgb(77, 95, 255);
     border-radius: 50%;
-    box-shadow: 0px 0px 25px 7px rgb(22, 22, 22);
+    box-shadow: 0px 0px 25px 15px var(--shadow-color);
+    border: 2px solid black;
 }
 
 /* .one::before {
