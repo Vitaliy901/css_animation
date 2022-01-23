@@ -7,7 +7,7 @@ html    {
     text-shadow: 1px 1px  rgba(24, 209, 255, 0.712);
 }
 :root {
-    --shadow-color: rgba(10, 10, 10, 0.835);
+    --shadow-color: rgba(0, 0, 0, 0.603);
 }
 main {
     min-height: 100vh;
@@ -24,8 +24,30 @@ video {
     min-width: 100vw;
     object-fit: cover;
     opacity: 0.9;
+    z-index: 0;
 }
 /* ================================ */
+.container_bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.circle_bg {
+    flex: 0 0 10rem;
+    height: 10rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ==================================== */
 .container {
     min-height: inherit;
     display: flex;
@@ -35,13 +57,11 @@ video {
 .circle {
     flex: 0 0 10rem;
     height: 10rem;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 50%;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -1;
 }
 
 .one {
@@ -51,10 +71,10 @@ video {
     transform: translate(-10px);
 }
 
-.circle > .in {
+.in {
     width: 5rem;
     height: 5rem;
-    background-color: rgb(77, 95, 255);
+    background-color: rgb(8, 33, 255);
     border-radius: 50%;
     box-shadow: 0px 0px 25px 15px var(--shadow-color);
     border: 2px solid black;
