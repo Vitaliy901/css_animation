@@ -14,13 +14,67 @@ main {
 }
 video {
     position: absolute;
+    z-index: -1;
     left: 0;
     top: 0;
     min-height: inherit;
     min-width: 100vw;
     object-fit: cover;
 }
+/* ================================ */
+.container {
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    flex: 0 0 10rem;
+    height: 10rem;
+    background-color: rgb(85, 3, 122);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.one {
+    transform: translate(10px);
+}
+.two{
+    transform: translate(-10px);
+}
+.one > .center {
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(77, 95, 255);
+    border-radius: 50%;
+}
+.two > .center {
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(95, 77, 255);
+    border-radius: 50%;
+}
+
+/* .one::before {
+
+}
+.two::before{
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(77, 255, 77);
+    border-radius: 50%;
+    position: absolute;
+    left: -;
+}
+.two::after{
+    content: "";
+    display: block;
+} */
 /* ============================================== */
 @media (min-width: 200px) and (max-width: 600px) {
     /* Свойства применяются в пределах от меньшего к большему. */
