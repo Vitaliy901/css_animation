@@ -123,7 +123,7 @@ video {
     position: absolute;
     left: 0rem;
     top: center;
-    transform-origin: -2.5rem;
+    transform-origin: 5rem;
     animation: rotate_two 2s linear 1s infinite;
     box-shadow: 
     0rem 0.1rem rgb(0, 181, 253), 0rem 0.2rem rgb(0, 181, 253), 
