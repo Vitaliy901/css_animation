@@ -76,7 +76,7 @@ video {
 .in {
     width: 5rem;
     height: 5rem;
-    background-color: rgba(251, 195, 97, 0.979);
+    background-color: rgba(102, 189, 102, 0.562);
     border-radius: 50%;
     /* box-shadow:  0px 0px 35px 20px var(--shadow-color); */
 }
