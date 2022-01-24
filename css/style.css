@@ -65,11 +65,10 @@ video {
 }
 
 .one {
-    transform: translate(10px);
-    
+    transform: translate(1.3rem);
 }
 .two{
-    transform: translate(-10px);
+    transform: translate(-1.3rem);
     position: relative;
 }
 
