@@ -66,6 +66,7 @@ video {
 
 .one {
     transform: translate(1.3rem);
+    position: relative;
 }
 .two{
     transform: translate(-1.3rem);
@@ -77,10 +78,10 @@ video {
     height: 5rem;
     background-color: rgba(251, 195, 97, 0.979);
     border-radius: 50%;
-    box-shadow:  0px 0px 35px 20px var(--shadow-color);
+    /* box-shadow:  0px 0px 35px 20px var(--shadow-color); */
 }
 /* ========================================= */
-.point {
+.point_one{
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%;
@@ -115,6 +116,42 @@ video {
     2.70rem 3.60rem 1rem rgba(0, 232, 253, 0.39);
 
 }
+.point_two{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: rgb(0, 181, 253);
+    position: absolute;
+    left: 0rem;
+    top: center;
+    transform-origin: 5rem;
+    animation: rotate 2s linear 2s infinite;
+    box-shadow: 
+    0rem 0.1rem rgb(0, 181, 253), 0rem 0.2rem rgb(0, 181, 253), 
+    0.01rem 0.3rem  rgb(0, 181, 253),0.02rem 0.4rem rgb(0, 181, 253),
+    0.03rem 0.5rem rgb(0, 181, 253), 0.05rem 0.6rem rgb(0, 181, 253), 0.06rem 0.7rem rgb(0, 181, 253),0.08rem 0.8rem rgb(0, 181, 253),
+    0.11rem 0.9rem rgb(0, 181, 253),0.13rem 1rem rgb(0, 181, 253),0.16rem 1.1rem rgb(0, 181, 253), 0.19rem 1.2rem rgb(0, 181, 253),
+    0.23rem 1.3rem rgb(0, 181, 253),0.27rem 1.4rem rgb(0, 181, 253),0.31rem 1.5rem rgb(0, 181, 253),0.36rem 1.6rem rgb(0, 181, 253),
+    0.40rem 1.7rem rgb(0, 181, 253),0.46rem 1.8rem rgb(0, 181, 253),0.51em 1.9rem rgb(0, 181, 253),0.58em 2rem rgb(0, 181, 253),
+    0.64em 2.1rem rgb(0, 181, 253),0.71em 2.2rem rgb(0, 181, 253),0.79em 2.3rem rgb(0, 181, 253),0.85em 2.4rem rgb(0, 181, 253),
+    0.95em 2.5rem rgb(0, 181, 253), 1.05em 2.6rem rgb(0, 181, 253), 1.15em 2.7rem rgb(0, 181, 253),1.26em 2.8rem rgb(0, 181, 253),
+    1.39em 2.9rem rgb(0, 181, 253),1.51em 3rem rgb(0, 181, 253),1.65em 3.1rem rgb(0, 181, 253),1.80em 3.2rem rgb(0, 181, 253),
+    2rem 3.31rem rgb(0, 181, 253),2.14rem 3.38rem rgb(0, 181, 253), 2.34rem 3.47rem rgb(0, 181, 253),
+
+    0rem -0.1rem 1rem rgba(0, 232, 253, 0.39), 0rem 0.2rem 1rem rgba(0, 232, 253, 0.39), 
+    0.01rem 0.3rem 1rem rgba(0, 232, 253, 0.39),0.02rem 0.4rem 1rem rgba(0, 232, 253, 0.39),
+    0.03rem 0.5rem 1rem rgba(0, 232, 253, 0.39), 0.05rem 0.6rem 1rem rgba(0, 232, 253, 0.39), 0.06rem 0.7rem 1rem rgba(0, 232, 253, 0.39),0.08rem 0.8rem 1rem rgba(0, 232, 253, 0.39),
+    0.11rem 0.9rem 1rem rgba(0, 232, 253, 0.39),0.13rem 1rem 1rem rgba(0, 232, 253, 0.39),0.16rem 1.1rem 1rem rgba(0, 232, 253, 0.39), 0.19rem 1.2rem 1rem rgba(0, 232, 253, 0.39),
+    0.23rem 1.3rem 1rem rgba(0, 232, 253, 0.39),0.27rem 1.4rem 1rem rgba(0, 232, 253, 0.39),0.31rem 1.5rem 1rem rgba(0, 232, 253, 0.39),0.36rem 1.6rem 1rem rgba(0, 232, 253, 0.39),
+    0.40rem 1.7rem 1rem rgba(0, 232, 253, 0.39),0.46rem 1.8rem 1rem rgba(0, 232, 253, 0.39),0.51em 1.9rem 1rem rgba(0, 232, 253, 0.39),0.58em 2rem 1rem rgba(0, 232, 253, 0.39),
+    0.64em 2.1rem 1rem rgba(0, 232, 253, 0.39),0.71em 2.2rem 1rem rgba(0, 232, 253, 0.39),0.79em 2.3rem 1rem rgba(0, 232, 253, 0.39),0.85em 2.4rem 1rem rgba(0, 232, 253, 0.39),
+    0.95em 2.5rem 1rem rgba(0, 232, 253, 0.39), 1.05em 2.6rem 1rem rgba(0, 232, 253, 0.39), 1.15em 2.7rem 1rem rgba(0, 232, 253, 0.39),1.26em 2.8rem 1rem rgba(0, 232, 253, 0.39),
+    1.39em 2.9rem 1rem rgba(0, 232, 253, 0.39),1.51em 3rem 1rem rgba(0, 232, 253, 0.39),1.65em 3.1rem 1rem rgba(0, 232, 253, 0.39),1.80em 3.2rem 1rem rgba(0, 232, 253, 0.39),
+    2rem 3.31rem 1rem rgba(0, 232, 253, 0.39),2.14rem 3.38rem 1rem rgba(0, 232, 253, 0.39), 2.34rem 3.47rem 1rem rgba(0, 232, 253, 0.39),
+    2.70rem 3.60rem 1rem rgba(0, 232, 253, 0.39);
+
+}
+
 /* =============Animation============== */
 @keyframes rotate {
     from {transform: rotate(0turn);}
