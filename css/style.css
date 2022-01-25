@@ -158,10 +158,10 @@ video {
         transform: rotate(1turn);
     }
 }
-/* @keyframes rotate_one{
-    from {transform: rotate(0turn);}
-    to {transform: rotate(-1turn);}
-} */
+@keyframes move{
+    from, to { transform-origin: 5rem;}
+    50% { transform-origin: -2.5rem;}
+}
 /* ============================================== */
 @media (min-width: 200px) and (max-width: 600px) {
     /* Свойства применяются в пределах от меньшего к большему. */
