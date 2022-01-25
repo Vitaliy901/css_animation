@@ -94,6 +94,7 @@ video {
     animation-timing-function: linear;
     animation-iteration-count: infinite; 
     box-shadow: 0px 0px 25px rgba(0, 211, 218, 0.493);
+    background-color: rgba(0, 211, 218, 0.493);
 }
 
 /* =============Animation rotate============== */
