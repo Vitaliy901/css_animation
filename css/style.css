@@ -123,14 +123,14 @@ video {
 /* =================Lighting===================== */
 @keyframes light {
     from, to {
-        background-color: rgba(255, 199, 227, 0.808);
-        box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0), 0px 0px 10px 7px rgba(255, 199, 227, 0.52);
-        border: 0rem solid rgba(126, 97, 111, 0.808);
+        background-color: rgba(255, 252, 84, 0.808);
+        box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0), 0px 0px 10px 7px rgba(255, 252, 84, 0.808);
+        border: 0rem solid rgba(255, 252, 84, 0.808);
     }
     50% {
         background-color: rgba(121, 0, 105, 0);
-        box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.657), 0px 0px 10px 3px rgba(255, 199, 227, 0.52);
-        border: 0.7rem solid rgba(126, 97, 111, 0.808);
+        box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.657), 0px 0px 10px 3px rgba(255, 252, 84, 0.808);
+        border: 0.7rem solid rgba(255, 252, 84, 0.808);
     }
     60% {
         background-color: rgba(121, 0, 105, 0);
